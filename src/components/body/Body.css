@@ -1,0 +1,76 @@
+.Body {
+    border-top: 5px solid rgba(25, 226, 183, 1);
+    background-color: white;
+    /* height: 68vh; */
+    z-index: 700;
+    position: relative;
+}
+.c-body {
+    margin: -5em auto 1em auto;
+    width: 80%;
+    /* height: 500px; */
+    position: static;
+    /* z-index: 900; */
+    left: 10%;  
+    
+    
+}
+
+.apartment-card{
+    padding: 0;
+    margin-bottom: 3em;
+    background-color: white; 
+    box-shadow: 0px 2px 3px 0px #c3c3c3;
+    position: relative;
+    overflow: hidden;
+}
+
+.img .card-details {
+    position: absolute;
+    bottom:0px;
+    left: 0px;
+    background: linear-gradient(136.25deg, rgba(10, 10, 10, 0.7) 40%, rgba(50, 50, 50, 0.6) 60%);
+    height: 7em;
+    width: 100%;
+    z-index: 1000;
+    padding: 1em;
+    transform: translateY(55px); 
+    transition: 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor: pointer;
+    
+    
+}
+.img:hover .card-details {
+    transform: translateY(4px); 
+    transition: 800ms cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+.card-details p {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    color: white;
+}
+.card-details p:last-child {
+    padding-bottom: 0.5em;
+    
+}
+.card-details p.title {
+    font-size: 14px;
+    color: rgba(25, 226, 183, 1);
+}
+.card-details p.sub-details {
+    font-size: 10px;
+    color: rgba(25, 226, 183, 1);
+}
+
+.card-details span.Cta {
+    border-radius: 50%;
+    /* height: 10px;
+    width: 50px; */
+    position: fixed;
+    right:15px;
+    padding: 0.25em 0.7em;
+    background-color: rgba(25, 226, 183, 1);
+    color: white;
+    font-weight: bold;
+}

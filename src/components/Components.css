@@ -1,0 +1,129 @@
+.c-link {
+    position: relative;
+}
+.Login {
+    position: absolute;
+    left: -78px;
+    top:40px;
+    background-color: white;
+    height: 22em;
+    width: 20em;
+    border-radius: 3px;
+    box-shadow: 0px 2px 3px 1px rgba(131, 122, 123, 1);
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: translateY(20px)
+}
+.activeLogin {
+    visibility: visible;
+    opacity: 1;
+    transition: 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: translateY(0px)
+}
+
+.Login .angle {
+    background-color: goldenrod;
+    
+    width: 1.5em;
+    height: 1.5em;
+    position: absolute;
+    left: 45%;
+    top: -10px;
+    transform: rotateZ(45deg);
+    z-index: 991;
+}
+
+.Login .header {
+    background-color: goldenrod;
+    padding: 1em;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+}
+
+.Login form input {
+    width: 100%;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.Login .tabs {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-top: -0.25em;
+}
+
+.Login .tabs  span{
+    display: inline-block;
+    width: 50%;
+    margin:0;
+    padding: 0 2.7em;
+    border-bottom: 2px solid transparent;
+    padding-top: 1em
+}
+
+.Login .tabs  span.active {
+    border-bottom: 2px solid red;
+    
+    display: inline-block;
+    width: 50%;
+    margin:0;
+    padding: 0 2.7em;
+}
+
+.Login .smalltext{
+    /* color: black; */
+    /* z-index: 1000; */
+    font-size: 10px;
+    font-weight: 400;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.Login .smalltext p {
+    display: inline;
+    color: rgba(131, 122, 123, 1);
+}
+.Login .Link {
+    color: rgba(236, 71, 49, 1);
+}
+
+.Login .loginCont {
+    
+}
+.Login .loginCont {
+    position: static;
+    overflow: hidden;
+}
+.Login .loginCont #login-default {
+    position: relative;
+    top: 10px;
+    left: 0px;
+
+} 
+.Login .loginCont #login-default + #login-child {
+    position: relative;
+    left: 300px;
+    top:-175px;
+} 
+.Login .loginCont .one {
+    position: relative;
+    transform: translateX(-300px);
+    transition: 400ms cubic-bezier(0.215, 0.610, 0.355, 1)
+}
+.Login .loginCont .one-active {
+    transform: translateX(0px);
+    transition: 400ms cubic-bezier(0.215, 0.610, 0.355, 1)
+}
+.Login .loginCont .two-active {
+    transform: translateX(-300px);
+    transition: 400ms cubic-bezier(0.215, 0.610, 0.355, 1)
+}
+.Login .loginCont .two {
+    transform: translateX(0px);
+    transition: 400ms cubic-bezier(0.215, 0.610, 0.355, 1)
+}

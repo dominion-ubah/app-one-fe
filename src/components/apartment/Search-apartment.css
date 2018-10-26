@@ -1,0 +1,23 @@
+.c-searchform {
+    margin-top: -1em;
+}
+input {
+    height: 3em;
+    padding: 0 1em;
+    box-shadow: 0px 1px 1px 0px #c3c3c3;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    border: none;
+}
+input[type="submit"] {
+    background-color: rgba(236, 71, 49, 1);
+    border: none;
+    color: white;
+    box-shadow: none;
+    cursor: pointer;
+
+}
+h5 {
+    color: white;
+    font-size: 14px;
+}
